@@ -31,14 +31,14 @@
             color: #ffffff;
             font-size: 1.5em;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            margin-bottom: 20px; /* Ruang antara navigasi dan tabel */
         }
         .container {
             background-color: #ffffff;
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-            max-width: 600px; /* Membatasi lebar */
+            max-width: 600px;
+            margin-top: 20px;
         }
         /* Tabel */
         table {
@@ -66,6 +66,7 @@
             -webkit-background-clip: text;
             background-clip: text;
             animation: gradientAnimation 6s ease infinite;
+            text-align: center;
         }
         /* Subjudul */
         .subtitle {
@@ -82,6 +83,14 @@
             line-height: 1.5;
             text-align: center;
         }
+        /* Gambar dengan Radius */
+        .image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
         /* Tombol 3D */
         .button {
             display: inline-block;
@@ -95,9 +104,9 @@
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), 
                         0 2px 5px rgba(0, 0, 0, 0.2);
             cursor: pointer;
-            text-decoration: none; /* Menghilangkan garis bawah */
+            text-decoration: none;
             transition: transform 0.2s, box-shadow 0.2s;
-            text-align: center; /* Rata tengah */
+            text-align: center;
         }
         .button:hover {
             transform: translateY(-3px);
@@ -114,19 +123,21 @@
 </head>
 <body>
 
-<div class="navbar">Navigasi FREE-Net</div>
+<div class="navbar">
+    Navigasi FREE-Net
+</div>
 
 <div class="container">
     <!-- Judul dengan Animasi Gradien -->
     <div class="title">FREE VPS | FREE-Net dot io</div>
+    <!-- Gambar -->
+    <img src="https://raw.githubusercontent.com/nixy-pro/NIXY-STORE-DOKUMENTASI/refs/heads/main/QRIS.jpg" alt="Gambar VPS" class="image"> <!-- Ganti URL dengan gambar yang diinginkan -->
     <!-- Subjudul -->
     <div class="subtitle">Solusi Cloud Hosting Gratis yang Anda Cari!</div>
     <!-- Deskripsi -->
     <div class="description">
         Dapatkan VPS gratis terbaik dengan FREE-Net dot io. Nikmati solusi cloud hosting yang cepat dan handal. 
-        Daftar sekarang dan rasakan kemudahan dalam mengelola VPS Anda. Kami menyediakan sumber daya yang 
-        optimal untuk kebutuhan Anda, sehingga Anda dapat fokus pada pengembangan dan pengelolaan aplikasi Anda tanpa 
-        khawatir tentang infrastruktur.
+        Daftar sekarang dan rasakan kemudahan dalam mengelola VPS Anda.
     </div>
     
     <!-- Tabel -->
